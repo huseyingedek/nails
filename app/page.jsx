@@ -4,7 +4,7 @@ import { img, PHOTOS } from '@/lib/photos';
 export const metadata = {
   title: 'Mithra Nails Bar — Adana Protez Tırnak & Kalıcı Oje',
   description:
-    'Mithra Nails Bar · Adana / Seyhan. Protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art. Randevu için DM: @mithranails',
+    'Mithra Nails Bar · Adana / Seyhan. Protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art. Randevu için DM: @mithranailsbar',
 };
 
 export default function Home() {
@@ -185,7 +185,7 @@ export default function Home() {
         <div className="container">
           <h2 className="split-lines">Kendinize bir <em className="it gold">ışıltı</em><br />hediye edin</h2>
           <p data-reveal>Instagram'dan DM atın, size en uygun saati birlikte bulalım.</p>
-          <a href="https://www.instagram.com/mithranails/" target="_blank" rel="noopener noreferrer" className="btn btn--solid" data-magnetic data-reveal><i /> @mithranails · DM</a>
+          <a href="https://www.instagram.com/mithranailsbar/" target="_blank" rel="noopener noreferrer" className="btn btn--solid" data-magnetic data-reveal><i /> @mithranailsbar · DM</a>
         </div>
       </section>
     </main>

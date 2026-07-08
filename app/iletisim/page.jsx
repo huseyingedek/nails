@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Randevu & İletişim — Mithra Nails Bar · Adana',
-  description: 'Mithra Nails Bar randevu: Instagram DM @mithranails. Adana / Seyhan.',
+  description: 'Mithra Nails Bar randevu: Instagram DM @mithranailsbar. Adana / Seyhan.',
 };
 
 export default function Iletisim() {
@@ -66,8 +66,8 @@ export default function Iletisim() {
               <h3>Mithra <em>Nails Bar</em></h3>
               <div className="info-row">
                 <div className="ico">✦</div>
-                <a href="https://www.instagram.com/mithranails/" target="_blank" rel="noopener noreferrer">
-                  <div><b>Instagram — Randevu için DM</b><span>@mithranails</span></div>
+                <a href="https://www.instagram.com/mithranailsbar/" target="_blank" rel="noopener noreferrer">
+                  <div><b>Instagram — Randevu için DM</b><span>@mithranailsbar</span></div>
                 </a>
               </div>
               <div className="info-row">
@@ -128,7 +128,7 @@ export default function Iletisim() {
         <div className="container">
           <h2 className="split-lines">Işıltıya bir <em className="it gold">DM</em> uzaklıktasınız</h2>
           <p data-reveal>Şu an yazın — uygun ilk saati birlikte bulalım.</p>
-          <a href="https://www.instagram.com/mithranails/" target="_blank" rel="noopener noreferrer" className="btn btn--solid" data-magnetic data-reveal><i /> @mithranails · DM At</a>
+          <a href="https://www.instagram.com/mithranailsbar/" target="_blank" rel="noopener noreferrer" className="btn btn--solid" data-magnetic data-reveal><i /> @mithranailsbar · DM At</a>
         </div>
       </section>
     </main>

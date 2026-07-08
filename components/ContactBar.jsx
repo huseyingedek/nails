@@ -1,9 +1,9 @@
 // İletişim bilgileri — NUMARAYI KENDİ WHATSAPP/TELEFON NUMARANIZLA DEĞİŞTİRİN.
 // Uluslararası format, başında + ve ülke kodu (Türkiye: 90).
-const PHONE = '905555555555'; // TODO: gerçek numara
+const PHONE = '905388103643'; // +90 538 810 36 43
 const WA = `https://wa.me/${PHONE}?text=${encodeURIComponent('Merhaba! Randevu almak istiyorum.')}`;
 const TEL = `tel:+${PHONE}`;
-const IG = 'https://www.instagram.com/mithranails/';
+const IG = 'https://www.instagram.com/mithranailsbar/';
 
 const WhatsAppIcon = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true">

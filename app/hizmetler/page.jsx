@@ -3,7 +3,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Hizmetler — Mithra Nails Bar · Adana',
   description:
-    'Protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art hizmetlerimiz. Güncel fiyat için DM: @mithranails',
+    'Protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art hizmetlerimiz. Güncel fiyat için DM: @mithranailsbar',
 };
 
 export default function Hizmetler() {
@@ -155,7 +155,7 @@ export default function Hizmetler() {
 
             <p className="price-note" data-reveal>
               ✦ Süreler yaklaşıktır; fiyat, tasarımın detayına göre belirlenir. Güncel fiyat listesi ve uygun saatler için{' '}
-              <a href="https://www.instagram.com/mithranails/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pink-deep)' }}>@mithranails</a> hesabımıza DM atmanız yeterli.
+              <a href="https://www.instagram.com/mithranailsbar/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pink-deep)' }}>@mithranailsbar</a> hesabımıza DM atmanız yeterli.
             </p>
           </div>
         </div>
@@ -165,7 +165,7 @@ export default function Hizmetler() {
         <div className="container">
           <h2 className="split-lines">Kararsız mı <em className="it gold">kaldınız?</em></h2>
           <p data-reveal>DM'den yazın — tırnak yapınıza en uygun uygulamayı birlikte belirleyelim.</p>
-          <a href="https://www.instagram.com/mithranails/" target="_blank" rel="noopener noreferrer" className="btn btn--solid" data-magnetic data-reveal><i /> @mithranails · DM</a>
+          <a href="https://www.instagram.com/mithranailsbar/" target="_blank" rel="noopener noreferrer" className="btn btn--solid" data-magnetic data-reveal><i /> @mithranailsbar · DM</a>
         </div>
       </section>
     </main>

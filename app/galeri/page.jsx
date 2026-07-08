@@ -2,7 +2,7 @@ import { img, PHOTOS } from '@/lib/photos';
 
 export const metadata = {
   title: 'Galeri — Mithra Nails Bar · Adana',
-  description: 'Mithra Nails Bar çalışmalarımızdan seçkiler. Tamamı için Instagram: @mithranails',
+  description: 'Mithra Nails Bar çalışmalarımızdan seçkiler. Tamamı için Instagram: @mithranailsbar',
 };
 
 const ITEMS = [
@@ -73,7 +73,7 @@ export default function Galeri() {
             <p className="lead" data-reveal style={{ margin: '1.4rem auto 2.6rem', maxWidth: '480px' }}>
               French setlerden taşlı tasarımlara — tüm işlerimizi ve güncel paylaşımlarımızı profilimizde bulabilirsiniz.
             </p>
-            <a href="https://www.instagram.com/mithranails/" target="_blank" rel="noopener noreferrer" className="btn btn--solid" data-magnetic data-reveal><i /> @mithranails'i Ziyaret Et</a>
+            <a href="https://www.instagram.com/mithranailsbar/" target="_blank" rel="noopener noreferrer" className="btn btn--solid" data-magnetic data-reveal><i /> @mithranailsbar'i Ziyaret Et</a>
           </div>
         </section>
       </main>

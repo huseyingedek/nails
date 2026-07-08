@@ -170,6 +170,13 @@ html:not(.js) .cursor-dot, html:not(.js) .cursor-ring { display: none; }
   display: block; font-family: var(--font-body); font-size: 0.52rem;
   letter-spacing: 0.55em; color: var(--ivory-soft); text-transform: uppercase; margin-top: -2px;
 }
+.header__logo-img {
+  height: 54px; width: 54px; border-radius: 50%; object-fit: cover; display: block;
+  box-shadow: 0 6px 18px -8px rgba(140,68,89,0.45);
+  transition: height .4s var(--ease-out), width .4s var(--ease-out);
+}
+.header.is-scrolled .header__logo-img { height: 44px; width: 44px; }
+@media (max-width: 720px) { .header__logo-img { height: 46px; width: 46px; } }
 .header__cta { display: flex; align-items: center; gap: 1.5rem; z-index: 960; position: relative; }
 .header__book {
   font-size: 0.72rem; letter-spacing: 0.3em; text-transform: uppercase;
@@ -497,6 +504,7 @@ html.js [data-reveal-img] > * { transform: scale(1.25); }
 .footer { background: var(--bg-3); border-top: 1px solid var(--line-soft); padding: 5rem 0 2rem; }
 .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap: 3rem; padding-bottom: 3.4rem; border-bottom: 1px solid var(--line-soft); }
 .footer__brand { font-family: var(--font-display); font-size: 1.8rem; letter-spacing: 0.25em; color: var(--pink-deep); }
+.footer__logo-img { height: 96px; width: 96px; border-radius: 50%; object-fit: cover; box-shadow: 0 8px 22px -10px rgba(140,68,89,0.4); }
 .footer__brand small { display: block; font-family: var(--font-body); font-size: 0.55rem; letter-spacing: 0.55em; color: var(--ivory-soft); text-transform: uppercase; }
 .footer__grid > div > p { color: var(--muted); font-size: 0.9rem; margin-top: 1.2rem; max-width: 300px; }
 .footer h5 { font-size: 0.66rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--pink-deep); margin-bottom: 1.3rem; font-weight: 400; }
@@ -736,6 +744,31 @@ html.js [data-reveal-img] > * { transform: scale(1.25); }
   .svc-item__num { display: none; }
   .hero__frame { inset: 14px; }
   .preloader__count { right: 1.4rem; }
+
+  /* Koleksiyon şeridi: mobilde parmakla yatay kaydırma */
+  .hstrip__wrap {
+    height: auto;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 3.5rem 6vw 4rem;
+    gap: 1.1rem;
+    scrollbar-width: none;
+  }
+  .hstrip__wrap::-webkit-scrollbar { display: none; }
+  .hstrip__title {
+    width: 76vw; min-width: 76vw;
+    scroll-snap-align: start;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .hstrip__card {
+    width: 68vw; min-width: 68vw;
+    height: 62vh;
+    scroll-snap-align: center;
+  }
 }
 
 /* ---------------- İletişim: WhatsApp FAB + Mobil bar ---------------- */

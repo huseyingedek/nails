@@ -443,7 +443,7 @@ export default function Effects() {
             gsap.fromTo(ok, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' });
             setTimeout(() => ok.classList.remove('show'), 6000);
           }
-          setTimeout(() => window.open('https://www.instagram.com/mithranails/', '_blank'), 900);
+          setTimeout(() => window.open('https://www.instagram.com/mithranailsbar/', '_blank'), 900);
           form.reset();
           select && select.classList.remove('has-value');
         });

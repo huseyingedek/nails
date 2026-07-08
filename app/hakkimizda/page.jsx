@@ -49,7 +49,7 @@ export default function Hakkimizda() {
           <span>Seyhan · Adana</span>
           <span>Kişiye Özel Tasarım</span>
           <span>Steril Ekipman</span>
-          <span>@mithranails</span>
+          <span>@mithranailsbar</span>
         </div>
       </div>
 
