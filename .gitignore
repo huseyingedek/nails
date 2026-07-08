@@ -1,0 +1,12 @@
+/node_modules
+/.next
+/.next-prod
+/tmp
+/out
+/build
+/legacy
+*.log
+.DS_Store
+*.pem
+npm-debug.log*
+.env*.local
