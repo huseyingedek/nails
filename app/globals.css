@@ -933,3 +933,29 @@ html.js [data-reveal-img] > * { transform: scale(1.25); }
   background-position: center !important;
   background-color: #F1E7D7;
 }
+
+/* ---------------- Blog ---------------- */
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
+.blog-card {
+  display: block; background: var(--bg); border: 1px solid var(--line-soft);
+  border-radius: 12px; overflow: hidden; color: var(--ivory);
+  transition: transform .45s var(--ease-out), border-color .45s, box-shadow .45s;
+}
+.blog-card:hover { transform: translateY(-8px); border-color: var(--line); box-shadow: 0 24px 50px -28px rgba(120,92,52,0.4); }
+.blog-card__cover { height: 210px; background-size: cover; background-position: center; }
+.blog-card__body { padding: 1.4rem 1.5rem 1.7rem; }
+.blog-card time { font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--pink-deep); }
+.blog-card h3 { font-family: var(--font-display); font-size: 1.35rem; font-weight: 500; margin: 0.5rem 0 0.6rem; line-height: 1.2; }
+.blog-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.55; }
+
+.post { max-width: 760px; margin-inline: auto; }
+.post__cover { height: clamp(240px, 42vw, 440px); background-size: cover; background-position: center; border-radius: 14px; margin-bottom: 2.2rem; }
+.post h2 { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 500; margin: 2.2rem 0 0.8rem; }
+.post p { color: var(--ivory-soft); margin-bottom: 1rem; line-height: 1.75; }
+.post ul { margin: 0 0 1.3rem 1.3rem; list-style: disc; color: var(--ivory-soft); }
+.post li { margin-bottom: 0.45rem; line-height: 1.6; }
+.post__note { border-left: 3px solid var(--pink-deep); background: var(--bg-2); padding: 1rem 1.3rem; margin: 1.6rem 0; color: var(--ivory); font-style: italic; border-radius: 0 8px 8px 0; }
+.post__cta { margin-top: 2.6rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+
+@media (max-width: 1024px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px) { .blog-grid { grid-template-columns: 1fr; } }

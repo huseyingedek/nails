@@ -9,8 +9,9 @@ const NAV = [
   { href: '/', num: '01', label: 'Ana Sayfa' },
   { href: '/hizmetler', num: '02', label: 'Hizmetler' },
   { href: '/galeri', num: '03', label: 'Galeri' },
-  { href: '/hakkimizda', num: '04', label: 'Hakkımızda' },
-  { href: '/iletisim', num: '05', label: 'Randevu' },
+  { href: '/blog', num: '04', label: 'Blog' },
+  { href: '/hakkimizda', num: '05', label: 'Hakkımızda' },
+  { href: '/iletisim', num: '06', label: 'Randevu' },
 ];
 
 export default function SiteShell({ children }) {
@@ -91,13 +92,14 @@ export default function SiteShell({ children }) {
             <div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/logo1.PNG" alt="Mithra Nails Bar" className="footer__logo-img" />
-              <p>Adana / Yüreğir'de protez tırnak ve kalıcı oje'de zarafetin adresi.</p>
+              <p>Adana Yüreğir'de protez tırnak, jel tırnak, kalıcı oje, manikür ve nail art — size en yakın nail bar.</p>
             </div>
             <div>
               <h5>Keşfet</h5>
               <ul>
                 <li><Link href="/hizmetler">Hizmetler</Link></li>
                 <li><Link href="/galeri">Galeri</Link></li>
+                <li><Link href="/blog">Blog</Link></li>
                 <li><Link href="/hakkimizda">Hakkımızda</Link></li>
                 <li><Link href="/iletisim">Randevu</Link></li>
               </ul>

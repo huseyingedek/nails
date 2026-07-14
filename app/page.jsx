@@ -2,9 +2,10 @@ import Link from 'next/link';
 import { img, PHOTOS } from '@/lib/photos';
 
 export const metadata = {
-  title: 'Mithra Nails Bar — Adana Protez Tırnak & Kalıcı Oje',
+  title: { absolute: 'Yüreğir & Adana En İyi Tırnakçı — Protez Tırnak, Kalıcı Oje, Nail Art | Mithra Nails Bar' },
   description:
-    'Mithra Nails Bar · Adana / Yüreğir. Protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art. Randevu için DM: @mithranailsbar',
+    "Yüreğir ve Adana'da en iyi tırnakçı Mithra Nails Bar. Protez tırnak, kalıcı oje, jel güçlendirme, manikür ve nail art. Kişiye özel tasarım, steril ekipman — size en yakın nail bar. Randevu: @mithranailsbar",
+  alternates: { canonical: '/' },
 };
 
 export default function Home() {
@@ -176,6 +177,22 @@ export default function Home() {
             <button className="testi__dot" aria-label="Yorum 2"><span className="fill" /></button>
             <button className="testi__dot" aria-label="Yorum 3"><span className="fill" /></button>
           </div>
+        </div>
+      </section>
+
+      {/* SEO — Bölge & Hizmetler */}
+      <section className="section section--tint">
+        <div className="container">
+          <div className="section__head">
+            <span className="label" data-reveal>Yüreğir & Adana</span>
+            <h2 className="h-lg split-lines">Adana'da <em className="it gold">tırnak</em> denince</h2>
+          </div>
+          <p data-reveal style={{ maxWidth: '780px', color: 'var(--ivory-soft)' }}>
+            Mithra Nails Bar, Adana Yüreğir'de protez tırnak, jel tırnak, jel güçlendirme, kalıcı oje, manikür, pedikür ve nail art hizmetleriyle bölgenin en iyi tırnakçısı olmayı hedefler. French, ombre, babyboomer, taşlı tasarım ve gelin tırnağı uygulamalarının yanı sıra kırık tırnak onarımı, dolgu ve el bakımı ile Adana'nın her semtinden misafirlerimizi ağırlıyoruz.
+          </p>
+          <p data-reveal style={{ maxWidth: '780px', color: 'var(--ivory-soft)', marginTop: '1rem' }}>
+            Yüreğir, Seyhan, Çukurova, Sarıçam ve Ziyapaşa çevresinden ulaşımı kolay konumumuzla, size en yakın nail bar için WhatsApp veya Instagram'dan hızlıca randevu alabilirsiniz. Steril ekipman, premium ürünler ve tamamen kişiye özel tasarımla, Adana'da kalıcı oje ve protez tırnakta güvenilir adresiniz.
+          </p>
         </div>
       </section>
 

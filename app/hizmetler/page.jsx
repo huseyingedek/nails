@@ -1,9 +1,10 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Hizmetler — Mithra Nails Bar · Adana',
+  title: 'Hizmetler & Fiyatlar — Protez Tırnak, Kalıcı Oje, Nail Art',
   description:
-    'Protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art hizmetlerimiz. Güncel fiyat için DM: @mithranailsbar',
+    "Yüreğir ve Adana'da protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art. Güncel fiyat ve randevu için DM: @mithranailsbar",
+  alternates: { canonical: '/hizmetler' },
 };
 
 export default function Hizmetler() {

@@ -1,6 +1,7 @@
 export const metadata = {
-  title: 'Galeri — Mithra Nails Bar · Adana',
-  description: 'Mithra Nails Bar çalışmalarımızdan seçkiler. Tamamı için Instagram: @mithranailsbar',
+  title: 'Galeri — Tırnak Çalışmalarımız (Yüreğir & Adana)',
+  description: "Yüreğir / Adana Mithra Nails Bar tırnak çalışmalarından seçkiler: protez tırnak, french, kalıcı oje ve nail art. Tamamı için Instagram: @mithranailsbar",
+  alternates: { canonical: '/galeri' },
 };
 
 const ITEMS = [

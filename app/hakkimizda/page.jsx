@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { img, PHOTOS } from '@/lib/photos';
 
 export const metadata = {
-  title: 'Hakkımızda — Mithra Nails Bar · Adana',
-  description: "Mithra Nails Bar'ın hikayesi, değerleri ve çalışma şekli. Adana / Yüreğir.",
+  title: 'Hakkımızda — Yüreğir & Adana Tırnak Atölyesi',
+  description: "Mithra Nails Bar Yüreğir / Adana. Hikayemiz, değerlerimiz ve çalışma şeklimiz: steril ekipman, premium ürünler ve kişiye özel tasarım.",
+  alternates: { canonical: '/hakkimizda' },
 };
 
 export default function Hakkimizda() {

@@ -1,6 +1,7 @@
 export const metadata = {
-  title: 'Randevu & İletişim — Mithra Nails Bar · Adana',
-  description: 'Mithra Nails Bar randevu: Instagram DM @mithranailsbar. Adana / Yüreğir.',
+  title: 'Randevu & İletişim — Yüreğir Adana Tırnakçı',
+  description: "Yüreğir / Adana Mithra Nails Bar randevu. Size en yakın tırnakçı için WhatsApp veya Instagram DM: @mithranailsbar. Pazartesi–Cumartesi 10.00–19.00.",
+  alternates: { canonical: '/iletisim' },
 };
 
 export default function Iletisim() {
