@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Randevu & İletişim — Mithra Nails Bar · Adana',
-  description: 'Mithra Nails Bar randevu: Instagram DM @mithranailsbar. Adana / Seyhan.',
+  description: 'Mithra Nails Bar randevu: Instagram DM @mithranailsbar. Adana / Yüreğir.',
 };
 
 export default function Iletisim() {
@@ -72,7 +72,7 @@ export default function Iletisim() {
               </div>
               <div className="info-row">
                 <div className="ico">⌖</div>
-                <div><b>Konum</b><span>Seyhan / Adana</span></div>
+                <div><b>Konum</b><span>Yüreğir / Adana</span></div>
               </div>
               <div className="info-row">
                 <div className="ico">✧</div>

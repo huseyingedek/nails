@@ -183,8 +183,14 @@ export default function Effects() {
       const header = document.querySelector('.header');
       if (header && !window.__mithraHeader) {
         window.__mithraHeader = true;
+        let lastY = window.scrollY;
         window.addEventListener('scroll', () => {
-          header.classList.toggle('is-scrolled', window.scrollY > 60);
+          const y = window.scrollY;
+          header.classList.toggle('is-scrolled', y > 60);
+          // aşağı kaydırınca gizle, yukarı çıkınca göster
+          if (y > 160 && y > lastY + 4) header.classList.add('is-hidden');
+          else if (y < lastY - 4) header.classList.remove('is-hidden');
+          lastY = y;
         }, { passive: true });
       }
 
@@ -475,8 +481,7 @@ export default function Effects() {
       }
 
       if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(() => ScrollTrigger.refresh());
-      }
+        document.fonts.ready.then(() => ScrollTrigger.refresh());      }
       ScrollTrigger.refresh();
 
       cleanup = () => {
@@ -493,3 +498,4 @@ export default function Effects() {
 
   return null;
 }
+

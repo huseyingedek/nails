@@ -4,7 +4,7 @@ import { img, PHOTOS } from '@/lib/photos';
 export const metadata = {
   title: 'Mithra Nails Bar — Adana Protez Tırnak & Kalıcı Oje',
   description:
-    'Mithra Nails Bar · Adana / Seyhan. Protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art. Randevu için DM: @mithranailsbar',
+    'Mithra Nails Bar · Adana / Yüreğir. Protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art. Randevu için DM: @mithranailsbar',
 };
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero__media">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={img(PHOTOS.glitterPink, 1920)} alt="Pembe parlak protez tırnak — Mithra Nails Bar" />
+          <img src="/hero1.PNG" alt="Zarif nude protez tırnak — Mithra Nails Bar" />
         </div>
         <div className="hero__scrim" />
         <div className="hero__frame" />
@@ -25,10 +25,10 @@ export default function Home() {
         <span className="sparkle" style={{ bottom: '28%', left: '30%' }}>✦</span>
         <span className="sparkle" style={{ top: '60%', right: '12%' }}>✦</span>
         <div className="container">
-          <span className="label hero__label" data-intro>Adana · Seyhan — Nail Atelier</span>
+          <span className="label hero__label" data-intro>Adana · Yüreğir — Nail Atelier</span>
           <h1 className="h-xl split-lines">
-            Tırnak sanatında<br />
-            <em className="it gold">pembe</em> zarafet<br />
+            Doğallığın<br />
+            en <em className="it gold">zarif</em> hali<br />
           </h1>
           <div className="hero__row">
             <Link href="/iletisim" className="btn btn--solid" data-magnetic data-intro><i /> Randevu Al</Link>
@@ -43,7 +43,7 @@ export default function Home() {
             <defs>
               <path id="circlePath" d="M 75,75 m -58,0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0" />
             </defs>
-            <text><textPath href="#circlePath">MITHRA NAILS BAR • ADANA / SEYHAN •</textPath></text>
+            <text><textPath href="#circlePath">MITHRA NAILS BAR • ADANA / YÜREĞİR •</textPath></text>
           </svg>
           <div className="badge-rotate__center">✦</div>
         </div>
@@ -103,14 +103,14 @@ export default function Home() {
         <div className="container about-teaser__grid">
           <div className="about-teaser__art">
             <div className="art-ring" data-speed="1.5" />
-            <div className="swatch art-a" data-reveal-img style={{ backgroundImage: `url(${img(PHOTOS.pinkMani, 800)})` }}><div style={{ height: '100%' }} /></div>
-            <div className="swatch art-b" data-reveal-img style={{ backgroundImage: `url(${img(PHOTOS.paintedNails, 700)})` }}><div style={{ height: '100%' }} /></div>
+            <div className="swatch art-a" data-reveal-img style={{ backgroundImage: `url(/gallery/g06.jpg)` }}><div style={{ height: '100%' }} /></div>
+            <div className="swatch art-b" data-reveal-img style={{ backgroundImage: `url(/gallery/g04.jpg)` }}><div style={{ height: '100%' }} /></div>
           </div>
           <div className="about-teaser__text">
             <span className="label" data-reveal>II — Mithra'yı Tanıyın</span>
             <h2 className="h-lg split-lines">Adı <em className="it gold">ışıktan</em> gelen atölye</h2>
             <p data-reveal>
-              Mithra, antik kültürlerde ışığın koruyucusudur. Adana Seyhan'daki atölyemizde biz de tam olarak bunu yapıyoruz:
+              Mithra, antik kültürlerde ışığın koruyucusudur. Adana Yüreğir'deki atölyemizde biz de tam olarak bunu yapıyoruz:
               ellerinize ışıltı, gününüze zarafet katıyoruz. Steril ekipman, premium ürünler ve tamamen size özel tasarım.
             </p>
             <Link href="/hakkimizda" className="btn" data-magnetic data-reveal><i /> Hikayemiz</Link>
@@ -127,19 +127,19 @@ export default function Home() {
       <section className="hstrip">
         <div className="hstrip__wrap">
           <div className="hstrip__title">
-            <span className="label">III — Koleksiyon</span>
-            <h2 className="h-lg" style={{ marginTop: '1.2rem' }}>Sezonun <em className="it gold">tonları</em></h2>
+            <span className="label">III — Çalışmalarımız</span>
+            <h2 className="h-lg" style={{ marginTop: '1.2rem' }}>Seçme <em className="it gold">işler</em></h2>
             <p className="lead" style={{ marginTop: '1.2rem', maxWidth: '320px' }}>
-              Kaydırın — atölyede bu sezon en çok tercih edilen pembe ve rose-gold tonlar.
+              Kaydırın — atölyemizden öne çıkan bazı çalışmalar.
             </p>
           </div>
-          <div className="hstrip__card swatch g-milk" style={{ backgroundImage: `url(${img(PHOTOS.whiteMani, 700)})` }}><div className="shade" /><small>01 — Pudra</small><h5>Blush Milk</h5></div>
-          <div className="hstrip__card swatch g-gold" style={{ backgroundImage: `url(${img(PHOTOS.maniRing, 700)})` }}><div className="shade" /><small>02 — Rose Gold</small><h5>Golden Hour</h5></div>
-          <div className="hstrip__card swatch g-rose" style={{ backgroundImage: `url(${img(PHOTOS.pinkMani, 700)})` }}><div className="shade" /><small>03 — Sıcak</small><h5>Terracotta Rose</h5></div>
-          <div className="hstrip__card swatch g-blush" style={{ backgroundImage: `url(${img(PHOTOS.handPink, 700)})` }}><div className="shade" /><small>04 — Şeker</small><h5>Blush Pink</h5></div>
-          <div className="hstrip__card swatch g-fuchsia" style={{ backgroundImage: `url(${img(PHOTOS.glitterPink, 700)})` }}><div className="shade" /><small>05 — Fuşya</small><h5>Pink Pop</h5></div>
-          <div className="hstrip__card swatch g-wine" style={{ backgroundImage: `url(${img(PHOTOS.whiteRing, 700)})` }}><div className="shade" /><small>06 — Derin</small><h5>Velvet Wine</h5></div>
-          <div className="hstrip__card swatch g-pearl" style={{ backgroundImage: `url(${img(PHOTOS.handsFlowers, 700)})` }}><div className="shade" /><small>07 — Zarif</small><h5>Pearl Shine</h5></div>
+          <div className="hstrip__card swatch g-wine" style={{ backgroundImage: `url(/gallery/g06.jpg)` }}><div className="shade" /><small>01</small><h5>Kafes Desen</h5></div>
+          <div className="hstrip__card swatch g-milk" style={{ backgroundImage: `url(/gallery/g07.jpg)` }}><div className="shade" /><small>02</small><h5>Kurdeleli Sarı</h5></div>
+          <div className="hstrip__card swatch g-rose" style={{ backgroundImage: `url(/gallery/g12.jpg)` }}><div className="shade" /><small>03</small><h5>Klasik Kırmızı</h5></div>
+          <div className="hstrip__card swatch g-blush" style={{ backgroundImage: `url(/gallery/g08.jpg)` }}><div className="shade" /><small>04</small><h5>Çiçekli French</h5></div>
+          <div className="hstrip__card swatch g-pearl" style={{ backgroundImage: `url(/gallery/g14.jpg)` }}><div className="shade" /><small>05</small><h5>Işıltılı Nude</h5></div>
+          <div className="hstrip__card swatch g-gold" style={{ backgroundImage: `url(/gallery/g02.jpg)` }}><div className="shade" /><small>06</small><h5>Kırmızı Çiçek</h5></div>
+          <div className="hstrip__card swatch g-milk" style={{ backgroundImage: `url(/gallery/g13.jpg)` }}><div className="shade" /><small>07</small><h5>Mavi French</h5></div>
         </div>
       </section>
 
@@ -153,7 +153,7 @@ export default function Home() {
               <p className="testi__quote">Tırnaklarım hiç bu kadar doğal ve sağlıklı görünmemişti. İlk seansta <em>evimi buldum</em>.</p>
               <div className="testi__who">
                 <div className="testi__ava">E</div>
-                <span>Elif — Seyhan</span>
+                <span>Elif — Yüreğir</span>
               </div>
             </div>
             <div className="testi__slide">

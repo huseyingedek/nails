@@ -48,7 +48,7 @@ export default function SiteShell({ children }) {
       <header className="header">
         <Link href="/" className="header__logo" aria-label="Mithra Nails Bar — Ana Sayfa">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.png" alt="Mithra Nails Bar" className="header__logo-img" />
+          <img src="/logo1.PNG" alt="Mithra Nails Bar" className="header__logo-img" />
         </Link>
         <div className="header__cta">
           <Link href="/iletisim" className="header__book" data-magnetic>Randevu Al</Link>
@@ -75,7 +75,7 @@ export default function SiteShell({ children }) {
               <a href="https://www.instagram.com/mithranailsbar/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pink-deep)' }}>@mithranailsbar</a>
             </p>
             <h4>Konum</h4>
-            <p>Seyhan / Adana</p>
+            <p>Yüreğir / Adana</p>
           </div>
         </div>
       </nav>
@@ -90,8 +90,8 @@ export default function SiteShell({ children }) {
           <div className="footer__grid">
             <div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt="Mithra Nails Bar" className="footer__logo-img" />
-              <p>Adana / Seyhan'da protez tırnak ve kalıcı oje'de zarafetin adresi.</p>
+              <img src="/logo1.PNG" alt="Mithra Nails Bar" className="footer__logo-img" />
+              <p>Adana / Yüreğir'de protez tırnak ve kalıcı oje'de zarafetin adresi.</p>
             </div>
             <div>
               <h5>Keşfet</h5>
@@ -111,7 +111,7 @@ export default function SiteShell({ children }) {
             <div>
               <h5>İletişim</h5>
               <ul>
-                <li>Seyhan / Adana</li>
+                <li>Yüreğir / Adana</li>
                 <li>Randevu için DM: @mithranailsbar</li>
               </ul>
             </div>

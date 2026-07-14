@@ -4,7 +4,7 @@ import SiteShell from '@/components/SiteShell';
 export const metadata = {
   title: 'Mithra Nails Bar — Adana Protez Tırnak & Kalıcı Oje',
   description:
-    'Mithra Nails Bar · Adana / Seyhan. Protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art. Randevu için DM: @mithranailsbar',
+    'Mithra Nails Bar · Adana / Yüreğir. Protez tırnak, jel güçlendirme, kalıcı oje, manikür ve nail art. Randevu için DM: @mithranailsbar',
 };
 
 export const viewport = {

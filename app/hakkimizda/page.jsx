@@ -3,7 +3,7 @@ import { img, PHOTOS } from '@/lib/photos';
 
 export const metadata = {
   title: 'Hakkımızda — Mithra Nails Bar · Adana',
-  description: "Mithra Nails Bar'ın hikayesi, değerleri ve çalışma şekli. Adana / Seyhan.",
+  description: "Mithra Nails Bar'ın hikayesi, değerleri ve çalışma şekli. Adana / Yüreğir.",
 };
 
 export default function Hakkimizda() {
@@ -29,7 +29,7 @@ export default function Hakkimizda() {
             <h2 className="h-lg split-lines">Adımız <em className="it gold">ışıktan</em> geliyor</h2>
             <p data-reveal>
               Mithra, antik kültürlerde ışığın ve dostluğun koruyucusudur. Logomuzdaki altın ağaç gibi: kökü özen, dalları zarafet.
-              Adana Seyhan'daki atölyemizde her misafirimizin ellerine biraz ışık, gününe biraz dostluk katmak için çalışıyoruz.
+              Adana Yüreğir'deki atölyemizde her misafirimizin ellerine biraz ışık, gününe biraz dostluk katmak için çalışıyoruz.
             </p>
             <p data-reveal>
               Bizim için tırnak sadece bir uygulama değil; sizi anlatan küçük bir imza. Bu yüzden her seans, dinlemekle başlar —
@@ -38,15 +38,15 @@ export default function Hakkimizda() {
           </div>
           <div className="about-teaser__art">
             <div className="art-ring" data-speed="1.5" />
-            <div className="swatch art-a" data-reveal-img style={{ backgroundImage: `url(${img(PHOTOS.whiteMani, 800)})` }}><div style={{ height: '100%' }} /></div>
-            <div className="swatch art-b" data-reveal-img style={{ backgroundImage: `url(${img(PHOTOS.pinkMani, 700)})` }}><div style={{ height: '100%' }} /></div>
+            <div className="swatch art-a" data-reveal-img style={{ backgroundImage: `url(/gallery/g05.jpg)` }}><div style={{ height: '100%' }} /></div>
+            <div className="swatch art-b" data-reveal-img style={{ backgroundImage: `url(/gallery/g03.jpg)` }}><div style={{ height: '100%' }} /></div>
           </div>
         </div>
       </section>
 
       <div className="marquee">
         <div className="marquee__track">
-          <span>Seyhan · Adana</span>
+          <span>Yüreğir · Adana</span>
           <span>Kişiye Özel Tasarım</span>
           <span>Steril Ekipman</span>
           <span>@mithranailsbar</span>
@@ -118,17 +118,17 @@ export default function Hakkimizda() {
           </div>
           <div className="team-grid">
             <div className="team-card" data-reveal>
-              <div className="swatch" style={{ backgroundImage: `url(${img(PHOTOS.whiteRing, 700)})` }} />
+              <div className="swatch" style={{ backgroundImage: `url(/gallery/g01.jpg)` }} />
               <h4>Milky French</h4>
               <span>Zamansız Klasik</span>
             </div>
             <div className="team-card" data-reveal data-delay="0.12">
-              <div className="swatch" style={{ backgroundImage: `url(${img(PHOTOS.paintedNails, 700)})` }} />
+              <div className="swatch" style={{ backgroundImage: `url(/gallery/g08.jpg)` }} />
               <h4>Taşlı Minimal</h4>
               <span>Işıltılı Detay</span>
             </div>
             <div className="team-card" data-reveal data-delay="0.24">
-              <div className="swatch" style={{ backgroundImage: `url(${img(PHOTOS.maniRing, 700)})` }} />
+              <div className="swatch" style={{ backgroundImage: `url(/gallery/g12.jpg)` }} />
               <h4>Rose Hour</h4>
               <span>Mithra İmzası</span>
             </div>

@@ -1,23 +1,24 @@
-import { img, PHOTOS } from '@/lib/photos';
-
 export const metadata = {
   title: 'Galeri — Mithra Nails Bar · Adana',
   description: 'Mithra Nails Bar çalışmalarımızdan seçkiler. Tamamı için Instagram: @mithranailsbar',
 };
 
 const ITEMS = [
-  { p: PHOTOS.whiteMani, t: 'Milky French', s: 'French · Klasik', cat: 'french', tall: true },
-  { p: PHOTOS.paintedNails, t: 'Star Studs', s: 'Nail Art · Taş', cat: 'art' },
-  { p: PHOTOS.pinkMani, t: 'Terracotta Rose', s: 'Kalıcı Oje', cat: 'oje' },
-  { p: PHOTOS.handPink, t: 'Blush Almond', s: 'Protez · Badem', cat: 'protez' },
-  { p: PHOTOS.maniRing, t: 'Nazar Touch', s: 'Nail Art · Minimal', cat: 'art', tall: true },
-  { p: PHOTOS.whiteRing, t: 'Sunny French', s: 'French · Renkli', cat: 'french' },
-  { p: PHOTOS.glitterPink, t: 'Pink Square', s: 'Protez · Kare', cat: 'protez' },
-  { p: PHOTOS.goldRing, t: 'Velvet Wine', s: 'Kalıcı Oje', cat: 'oje' },
-  { p: PHOTOS.salon, t: 'Rose Line', s: 'Nail Art · Çizgi', cat: 'art' },
-  { p: PHOTOS.handsFlowers, t: 'Pearl Tip', s: 'French · Sedef', cat: 'french' },
-  { p: PHOTOS.handWhite, t: 'Rose Coffin', s: 'Protez · Coffin', cat: 'protez' },
-  { p: PHOTOS.polish1, t: 'Golden Hour', s: 'Kalıcı Oje · Işıltı', cat: 'oje' },
+  { src: '/gallery/g01.jpg', t: 'Yıldız Işıltısı', s: 'Nail Art · Taş', cat: 'art', tall: true },
+  { src: '/gallery/g02.jpg', t: 'Kırmızı Çiçek', s: 'Nail Art', cat: 'art' },
+  { src: '/gallery/g03.jpg', t: 'Doğal French', s: 'French', cat: 'french' },
+  { src: '/gallery/g04.jpg', t: 'Mavi Çiçek', s: 'Nail Art', cat: 'art' },
+  { src: '/gallery/g05.jpg', t: 'Kelebek Set', s: 'Protez · Badem', cat: 'protez', tall: true },
+  { src: '/gallery/g06.jpg', t: 'Kafes Desen', s: 'Nail Art · Taş', cat: 'art' },
+  { src: '/gallery/g07.jpg', t: 'Kurdeleli Sarı', s: 'French', cat: 'french' },
+  { src: '/gallery/g08.jpg', t: 'Çiçekli French', s: 'French', cat: 'french' },
+  { src: '/gallery/g09.jpg', t: 'Mavi French', s: 'French', cat: 'french' },
+  { src: '/gallery/g10.jpg', t: 'Mavi Yıldız', s: 'Nail Art', cat: 'art' },
+  { src: '/gallery/g11.jpg', t: 'Gelin Işıltısı', s: 'Protez · Özel Gün', cat: 'protez' },
+  { src: '/gallery/g12.jpg', t: 'Klasik Kırmızı', s: 'Kalıcı Oje', cat: 'protez' },
+  { src: '/gallery/g13.jpg', t: 'Nazar French', s: 'French', cat: 'french' },
+  { src: '/gallery/g14.jpg', t: 'Işıltılı Nude', s: 'Protez', cat: 'protez' },
+  { src: '/gallery/g15.jpg', t: 'Taşlı French', s: 'French · Taş', cat: 'french' },
 ];
 
 export default function Galeri() {
@@ -35,7 +36,7 @@ export default function Galeri() {
               <em className="it gold">ışıltılar</em><br />
             </h1>
             <p className="lead" data-intro>
-              Aşağıdakiler temsili renk kartlarıdır — gerçek çalışmalarımızın tamamı Instagram hesabımızda. Kartlara tıklayıp yakından bakabilirsiniz.
+              Atölyemizde gerçekleştirdiğimiz çalışmalardan seçkiler. Daha fazlası ve güncel paylaşımlar için Instagram hesabımıza göz atın. Kartlara tıklayıp yakından bakabilirsiniz.
             </p>
           </div>
         </section>
@@ -45,7 +46,6 @@ export default function Galeri() {
             <div className="filterbar" data-reveal>
               <button className="is-active" data-filter="all">Tümü</button>
               <button data-filter="protez">Protez</button>
-              <button data-filter="oje">Kalıcı Oje</button>
               <button data-filter="french">French</button>
               <button data-filter="art">Nail Art</button>
             </div>
@@ -58,7 +58,7 @@ export default function Galeri() {
                   data-cat={it.cat}
                   data-reveal
                 >
-                  <div className="art" style={{ backgroundImage: `url(${img(it.p, it.tall ? 900 : 700)})` }} />
+                  <div className="art" style={{ backgroundImage: `url(${it.src})` }} />
                   <figcaption><b>{it.t}</b><small>{it.s}</small></figcaption>
                 </figure>
               ))}
@@ -82,7 +82,7 @@ export default function Galeri() {
       <div className="lightbox">
         <button className="lightbox__close" aria-label="Kapat">×</button>
         <div className="lightbox__box">
-          <div className="lightbox__art swatch g-gold" />
+          <div className="lightbox__art swatch" />
           <div className="lightbox__cap" />
         </div>
       </div>
