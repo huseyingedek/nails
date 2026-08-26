@@ -1,5 +1,6 @@
 import './globals.css';
 import SiteShell from '@/components/SiteShell';
+import Script from 'next/script';
 
 // TODO: Yayındaki gerçek alan adınızla değiştirin.
 const SITE = 'https://www.mithranailsbar.com';
@@ -128,6 +129,17 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }}
         />
+        {/* Google tag (gtag.js) — Google Ads */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18332581997"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-gtag" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18332581997');`}
+        </Script>
       </head>
       <body>
         <SiteShell>{children}</SiteShell>
