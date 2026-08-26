@@ -1,3 +1,5 @@
+'use client';
+
 // İletişim bilgileri — NUMARAYI KENDİ WHATSAPP/TELEFON NUMARANIZLA DEĞİŞTİRİN.
 // Uluslararası format, başında + ve ülke kodu (Türkiye: 90).
 const PHONE = '905388103643'; // +90 538 810 36 43
@@ -24,6 +26,15 @@ const InstagramIcon = () => (
 );
 
 export default function ContactBar() {
+  const fireConversion = () => {
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-18332581997/B-szCOLIsegcEO2A1KVE',
+        value: 1.0,
+        currency: 'TRY',
+      });
+    }
+  };
   return (
     <>
       {/* Masaüstü: sağ altta WhatsApp */}
@@ -34,19 +45,20 @@ export default function ContactBar() {
         rel="noopener noreferrer"
         aria-label="WhatsApp ile yazın"
         data-magnetic
+        onClick={fireConversion}
       >
         <WhatsAppIcon />
       </a>
 
       {/* Mobil: alt bar — WhatsApp · Ara · Instagram */}
       <nav className="mobilebar" aria-label="Hızlı iletişim">
-        <a className="wa" href={WA} target="_blank" rel="noopener noreferrer">
+        <a className="wa" href={WA} target="_blank" rel="noopener noreferrer" onClick={fireConversion}>
           <WhatsAppIcon /> WhatsApp
         </a>
-        <a className="call" href={TEL}>
+        <a className="call" href={TEL} onClick={fireConversion}>
           <PhoneIcon /> Ara
         </a>
-        <a className="ig" href={IG} target="_blank" rel="noopener noreferrer">
+        <a className="ig" href={IG} target="_blank" rel="noopener noreferrer" onClick={fireConversion}>
           <InstagramIcon /> Instagram
         </a>
       </nav>

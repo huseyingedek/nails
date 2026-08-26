@@ -140,6 +140,19 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'AW-18332581997');`}
         </Script>
+        {/* Google Ads conversion — tıklama (click) helper */}
+        <Script id="google-ads-conversion" strategy="afterInteractive">
+          {`window.gtag_report_conversion = function(url){
+  var callback = function(){ if (typeof(url) !== 'undefined'){ window.location = url; } };
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18332581997/B-szCOLIsegcEO2A1KVE',
+    'value': 1.0,
+    'currency': 'TRY',
+    'event_callback': callback
+  });
+  return false;
+};`}
+        </Script>
       </head>
       <body>
         <SiteShell>{children}</SiteShell>
